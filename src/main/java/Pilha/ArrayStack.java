@@ -1,27 +1,43 @@
 package Pilha;
 
+import com.sun.source.tree.ArrayAccessTree;
+
+import java.util.Arrays;
+
 public class ArrayStack<E> implements Stack<E> {
-    @Override
+    private int top = -1;
+    private int capacity;
+    private E[] array;
+    private static final int CAPACITY = 1000;
+
+    public ArrayStack(int cap){
+        this.capacity = cap;
+        array = (E[]) new Object[capacity];
+    }
+    public ArrayStack(){
+     this(CAPACITY);
+    }
+
     public int size() {
-        return 0;
+        return top++;
     }
 
-    @Override
+
     public boolean isEmpty() {
-        return false;
+        return (top == -1);
     }
 
-    @Override
+
     public E top() throws EmptyStackException {
-        return null;
+        if(isEmpty()) throw new EmptyStackException("Empty");
+        return array[top];
     }
 
-    @Override
+
     public void push(E e) {
 
     }
 
-    @Override
     public E pop() throws EmptyStackException {
         return null;
     }
