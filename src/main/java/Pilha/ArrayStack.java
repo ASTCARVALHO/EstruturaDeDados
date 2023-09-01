@@ -29,16 +29,27 @@ public class ArrayStack<E> implements Stack<E> {
 
 
     public E top() throws EmptyStackException {
-        if(isEmpty()) throw new EmptyStackException("Empty");
+        if(isEmpty()) throw new EmptyStackException("Empty stack");
         return array[top];
     }
 
 
     public void push(E e) {
-
+        if (top == capacity) resize(capacity * 2);
+        top++;
+        array[top] = e;
     }
 
     public E pop() throws EmptyStackException {
-        return null;
+        E item = array[top];
+        top--;
+        return item;
+    }
+    public void resize(int newSize){
+        E[] temp = (E[])new Object[newSize];
+        for (int i = 0; i <= top; i++) {
+            temp[i] = array[i];
+        }
+        array = temp;
     }
 }
