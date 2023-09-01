@@ -41,6 +41,8 @@ public class ArrayStack<E> implements Stack<E> {
     }
 
     public E pop() throws EmptyStackException {
+        if (isEmpty()) throw new EmptyStackException("Underflow");
+        if (top > 0 && top++ == capacity/4) resize(capacity/2);
         E item = array[top];
         top--;
         return item;
