@@ -35,16 +35,16 @@ public class ArrayStack<E> implements Stack<E> {
 
 
     public void push(E e) {
-        if (top == capacity) resize(capacity * 2);
+        if (size() == capacity) resize(capacity * 2);
         top++;
         array[top] = e;
     }
 
     public E pop() throws EmptyStackException {
         if (isEmpty()) throw new EmptyStackException("Underflow");
-        if (top > 0 && top++ == capacity/4) resize(capacity/2);
         E item = array[top];
         top--;
+        if (size() > 0 && size() == capacity/4) resize(capacity/2);
         return item;
     }
     public void resize(int newSize){
