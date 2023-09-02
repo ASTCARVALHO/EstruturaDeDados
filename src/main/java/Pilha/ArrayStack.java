@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class ArrayStack<E> implements Stack<E> {
     private int top = -1;
-    private int capacity;
+    public int capacity;
     private E[] array;
     private static final int INITCAPACITY = 10;
 
@@ -19,7 +19,7 @@ public class ArrayStack<E> implements Stack<E> {
     }
 
     public int size() {
-        return top++;
+        return top+1;
     }
 
 
@@ -53,5 +53,6 @@ public class ArrayStack<E> implements Stack<E> {
             temp[i] = array[i];
         }
         array = temp;
+        capacity = capacity*2;
     }
 }
