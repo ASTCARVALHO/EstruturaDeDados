@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc15ee9-caab-4acc-9ee3-3fa57a6f523e" name="Changes" comment="adicionando a interfaçe Queue">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Lista/ArrayQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Lista/EmptyQueueException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lista/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lista/Queue.java" afterDir="false" />
+    <list default="true" id="dbc15ee9-caab-4acc-9ee3-3fa57a6f523e" name="Changes" comment="adicionado a exceção EmptyQueueException">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lista/ArrayQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lista/ArrayQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pilha/ArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pilha/ArrayStack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693677276797</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="adicionado a exceção EmptyQueueException">
+      <created>1693677630527</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693677630527</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,6 +123,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adicionado classe stack e alguns métodos dessa classe" />
     <MESSAGE value="adicionando a interfaçe Queue" />
-    <option name="LAST_COMMIT_MESSAGE" value="adicionando a interfaçe Queue" />
+    <MESSAGE value="adicionado a exceção EmptyQueueException" />
+    <option name="LAST_COMMIT_MESSAGE" value="adicionado a exceção EmptyQueueException" />
   </component>
 </project>

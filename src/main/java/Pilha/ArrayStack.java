@@ -8,14 +8,14 @@ public class ArrayStack<E> implements Stack<E> {
     private int top = -1;
     private int capacity;
     private E[] array;
-    private static final int CAPACITY = 1000;
+    private static final int INITCAPACITY = 10;
 
     public ArrayStack(int cap){
         this.capacity = cap;
         array = (E[]) new Object[capacity];
     }
     public ArrayStack(){
-     this(CAPACITY);
+     this(INITCAPACITY);
     }
 
     public int size() {
