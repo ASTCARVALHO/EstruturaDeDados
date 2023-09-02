@@ -16,7 +16,7 @@ public class ArrayQueue <E> implements Queue<E> {
     }
 
     public int size() {
-        return 0;
+        return array.length;
     }
 
 
@@ -26,21 +26,21 @@ public class ArrayQueue <E> implements Queue<E> {
 
 
     public E front() throws EmptyQueueException {
-        return null;
+        return array[head];
     }
 
 
     public void enqueue(E e) {
         array[tail] = e;
         count ++;
-       tail = (tail+1) % array.length;
+       tail = (tail+1) % size();
 
     }
 
 
     public E dequeue() throws EmptyQueueException {
         E e = array[head];
-        head = (head +1) % array.length;
+        head = (head +1) % size();
 
         return e;
     }
