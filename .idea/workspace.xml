@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc15ee9-caab-4acc-9ee3-3fa57a6f523e" name="Changes" comment="algumas mudanças no classe lista">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lista/ArrayQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lista/ArrayQueue.java" afterDir="false" />
-    </list>
+    <list default="true" id="dbc15ee9-caab-4acc-9ee3-3fa57a6f523e" name="Changes" comment="iserindo comentários para melhor entendimento" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -217,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693761279340</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="iserindo comentários para melhor entendimento">
+      <created>1693763254231</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1693763254231</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -238,6 +242,7 @@
     <MESSAGE value="adicionado alguns métodos da fila" />
     <MESSAGE value="iniciando os testes da fila" />
     <MESSAGE value="algumas mudanças no classe lista" />
-    <option name="LAST_COMMIT_MESSAGE" value="algumas mudanças no classe lista" />
+    <MESSAGE value="iserindo comentários para melhor entendimento" />
+    <option name="LAST_COMMIT_MESSAGE" value="iserindo comentários para melhor entendimento" />
   </component>
 </project>

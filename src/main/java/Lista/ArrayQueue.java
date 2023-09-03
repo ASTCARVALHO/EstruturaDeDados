@@ -14,11 +14,11 @@ public class ArrayQueue <E> implements Queue<E> {
         capacity = INITCAPACITY;
         array = (E[]) new Object[capacity];
     }
-    // retorna a quantidade de elementos
+    /* retorna a quantidade de elementos*/
     public int size() {
         return (capacity - head + tail) % capacity;
     }
-    //verifica se o head e tail são iguais o que indica que a fila esta vazia
+    /*verifica se o head e tail são iguais o que indica que a fila esta vazia*/
     public boolean isEmpty() {
         return head == tail;
     }
@@ -26,7 +26,7 @@ public class ArrayQueue <E> implements Queue<E> {
     public boolean isFull() {
         return size() == array.length;
     }
-    //Mostra o primeiro elemento da fila
+    /*Mostra o primeiro elemento da fila que está na posição head do array*/
     public E front() throws EmptyQueueException {
         if (isEmpty()) throw new EmptyQueueException("Empty queue");
         return array[head];
