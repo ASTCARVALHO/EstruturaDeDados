@@ -15,7 +15,7 @@ class ArrayStackTest {
     }
     @Test
     void pushAndPop(){
-        assertEquals(2,array.capacity);
+        assertEquals(2,array.showCapacity());
         assertTrue(array.isEmpty());
         array.push(5);
         assertFalse(array.isEmpty());
@@ -28,18 +28,16 @@ class ArrayStackTest {
     }
     @Test
     public void resize(){
-        assertEquals(2, array.capacity);
+        assertEquals(2, array.showCapacity());
         array.push(1);
         array.push(2);
         array.push(3);
         array.push(4);
-        array.push(1);
-        array.push(1);
-        array.push(1);
-        array.push(1);
-        array.push(1);
-        assertEquals(16,array.capacity);
-
+        assertEquals(4,array.showCapacity());
+        array.pop();
+        array.pop();
+        array.pop();
+        assertEquals(2,array.showCapacity());
     }
 
 }
