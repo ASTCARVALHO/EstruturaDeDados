@@ -43,6 +43,13 @@ public class ArrayQueue <E> implements Queue<E> {
         array[tail] = e;
        tail = (tail+1) % capacity;
     }
+    /*
+    * verifica se a fila está vazia, em caso verdadeiro lança um exceção
+    * armazena a ‘item’ da posição head do array
+    * incrementa o head
+    * verifica se a capacidade do array esta muito grande
+    * retorna o ‘item’ armazenado anteriormente;
+    * */
     public E dequeue() throws EmptyQueueException {
         if (isEmpty()) throw new EmptyQueueException("Empty queue");
         E e = array[head];
@@ -50,6 +57,13 @@ public class ArrayQueue <E> implements Queue<E> {
         if(size() > 0 && size() == (capacity-1)/4) resize(capacity /2);
         return e;
     }
+    /*
+    * atualiza o tamanho da capacidade do array
+    * cria um array temporário
+    * adiciona os elementos do array principal no array temporário que ja está redmensionado
+    * array principal recebe o array temporário
+    * zera o head, e o tail recebe o valor size()
+    * */
     public void resize(int newSize){
         capacity = newSize;
         int size = size();
