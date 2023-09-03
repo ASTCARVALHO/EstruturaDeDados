@@ -3,7 +3,7 @@ package Lista;
 public class ArrayQueue <E> implements Queue<E> {
     private int head = 0;
     private int tail = 0;
-    private int capacity;
+    public int capacity;
     private static final int INITCAPACITY = 10;
     private E[] array;
     public ArrayQueue(int cap){
@@ -39,7 +39,7 @@ public class ArrayQueue <E> implements Queue<E> {
     * e incremeta o tail
     * */
     public void enqueue(E e) {
-        if(size() == capacity-1) resize(capacity * 2);
+        if(size() == capacity -1) resize(capacity * 2);
         array[tail] = e;
        tail = (tail+1) % capacity;
     }
@@ -54,7 +54,7 @@ public class ArrayQueue <E> implements Queue<E> {
         if (isEmpty()) throw new EmptyQueueException("Empty queue");
         E e = array[head];
         head = (head +1) % size();
-        if(size() > 0 && size() == (capacity-1)/4) resize(capacity /2);
+        if(size() > 0 && size() == (capacity)/4) resize(capacity /2);
         return e;
     }
     /*
