@@ -2,7 +2,8 @@ package AlgoritmosOrdenação;
 
 import java.util.Scanner;
 
-public class TesteOrdenação {
+
+public class TesteOrdenacao {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Tamanho da lista");
@@ -12,6 +13,10 @@ public class TesteOrdenação {
             System.out.println("Numero:");
             int numero = input.nextInt();
             lista[i] = numero;
+        }
+        BubbleSort.bubbleSort(lista);
+        for (int i: lista) {
+            System.out.println(i);
         }
     }
 }

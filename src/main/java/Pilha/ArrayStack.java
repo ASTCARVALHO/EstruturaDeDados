@@ -22,7 +22,7 @@ public class ArrayStack<E> implements Stack<E> {
     }
 
     public int size() {
-        return top+1;
+        return top;
     }
 
 
@@ -51,11 +51,11 @@ public class ArrayStack<E> implements Stack<E> {
         return item;
     }
     public void resize(int newSize){
+        capacity = newSize;
         E[] temp = (E[])new Object[newSize];
         for (int i = 0; i <= top; i++) {
             temp[i] = array[i];
         }
         array = temp;
-        capacity = newSize;
     }
 }

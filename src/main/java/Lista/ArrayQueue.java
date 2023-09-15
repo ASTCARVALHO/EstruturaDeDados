@@ -22,9 +22,8 @@ public class ArrayQueue <E> implements Queue<E> {
     public boolean isEmpty() {
         return head == tail;
     }
-    // todo
     public boolean isFull() {
-        return size() == array.length;
+        return size() == capacity -1;
     }
     /*Mostra o primeiro elemento da fila que está na posição head do array*/
     public E front() throws EmptyQueueException {
@@ -38,8 +37,8 @@ public class ArrayQueue <E> implements Queue<E> {
     * armazena o ‘item’ na posição tail do array
     * e incremeta o tail
     * */
-    public void enqueue(E e) {
-        if(size() == capacity -1) resize(capacity * 2);
+    public void enqueue(E e){
+        if(size() == capacity-1) resize(capacity * 2);
         array[tail] = e;
        tail = (tail+1) % capacity;
     }
@@ -53,7 +52,7 @@ public class ArrayQueue <E> implements Queue<E> {
     public E dequeue() throws EmptyQueueException {
         if (isEmpty()) throw new EmptyQueueException("Empty queue");
         E e = array[head];
-        head = (head +1) % size();
+        head = (head +1) % capacity;
         if(size() > 0 && size() == (capacity)/4) resize(capacity /2);
         return e;
     }
@@ -65,14 +64,13 @@ public class ArrayQueue <E> implements Queue<E> {
     * zera o head, e o tail recebe o valor size()
     * */
     public void resize(int newSize){
-        capacity = newSize;
-        int size = size();
         E[] temp = (E[]) new Object[newSize];
         for (int i = 0; i < size() ; i++) {
             temp[i] = array[(i + head) % capacity];
         }
-        array  = temp;
+        capacity = newSize;
         head = 0;
-        tail = size;
+        tail = size();
+        array  = temp;
     }
 }
