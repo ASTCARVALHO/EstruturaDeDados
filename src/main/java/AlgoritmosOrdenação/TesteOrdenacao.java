@@ -14,7 +14,7 @@ public class TesteOrdenacao {
             int numero = input.nextInt();
             lista[i] = numero;
         }
-        BubbleSort.bubbleSort(lista);
+        SelectionSort.selectionSort(lista);
         for (int i: lista) {
             System.out.println(i);
         }
