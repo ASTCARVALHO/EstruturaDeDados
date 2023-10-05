@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbc15ee9-caab-4acc-9ee3-3fa57a6f523e" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Arvores/Arvore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Arvores/No.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Arvores/Arvore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Arvores/Arvore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Arvores/No.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Arvores/No.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694712534482</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary=".">
+      <created>1696524451620</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1696524451620</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

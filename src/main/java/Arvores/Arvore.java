@@ -2,9 +2,9 @@ package Arvores;
 
 import org.w3c.dom.Node;
 
-public class Arvore<T> {
+public class Arvore {
 
-    private T raiz;
+    private No raiz;
     private int tamanho;
 
     public Arvore() {
@@ -19,12 +19,22 @@ public class Arvore<T> {
     public boolean isVazia() {
         return raiz == null;
     }
+    public <T> void adicionar(int chave,T valor){
+        tamanho++;
 
-    public int calculaArea(No<T> no) {
-        if (no == null) {
-            return -1;
-        } else {
-            a
+        if(isVazia()) {
+            raiz.setChave(chave);
+            raiz.setValor(valor);
+        }else {
+            No p = raiz;
+            while(p != null){
+                if(chave < raiz.getChave()){
+                    p.setEsquerda(chave,valor);
+                }
+            }
+
         }
+
+        return;
     }
 }

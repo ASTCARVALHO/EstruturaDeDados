@@ -3,7 +3,7 @@ package Arvores;
 public class No<T> {
 
     private int chave;
-    private int valor;
+    private T valor;
     private T esquerda;
     private T direita;
     private T pai;
@@ -16,11 +16,11 @@ public class No<T> {
         this.chave = chave;
     }
 
-    public int getValor() {
+    public T getValor() {
         return valor;
     }
 
-    public void setValor(int valor) {
+    public void setValor(T valor) {
         this.valor = valor;
     }
 
@@ -48,15 +48,17 @@ public class No<T> {
         this.pai = pai;
     }
 
-    public No(int chave, int valor) {
+    public No(int chave, T valor) {
         this(chave, valor, null, null, null);
     }
 
-    public No(int chave, int valor, T esquerda, T direita, T pai) {
+    public No(int chave, T valor, T esquerda, T direita, T pai) {
         this.chave = chave;
         this.valor = valor;
         this.esquerda = esquerda;
         this.direita = direita;
         this.pai = pai;
     }
+
+
 }
