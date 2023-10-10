@@ -14,7 +14,7 @@ public class TesteOrdenacao {
             int numero = input.nextInt();
             lista[i] = numero;
         }
-        SelectionSort.selectionSort(lista);
+        InsertionSort.insertionSort(lista);
         for (int i: lista) {
             System.out.println(i);
         }
