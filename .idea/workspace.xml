@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc15ee9-caab-4acc-9ee3-3fa57a6f523e" name="Changes" comment="iserindo comentários para melhor entendimento">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AlgoritmosOrdenação/InsertionSort.java" afterDir="false" />
+    <list default="true" id="dbc15ee9-caab-4acc-9ee3-3fa57a6f523e" name="Changes" comment="InsertionSort add">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AlgoritmosOrdenação/TesteOrdenacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AlgoritmosOrdenação/TesteOrdenacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Arvores/Arvore.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Arvores/No.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AlgoritmosOrdenação/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AlgoritmosOrdenação/InsertionSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693775478788</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="InsertionSort add">
+      <created>1696943730904</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1696943730904</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -298,7 +301,8 @@
     <MESSAGE value="iniciando os testes da fila" />
     <MESSAGE value="algumas mudanças no classe lista" />
     <MESSAGE value="iserindo comentários para melhor entendimento" />
-    <option name="LAST_COMMIT_MESSAGE" value="iserindo comentários para melhor entendimento" />
+    <MESSAGE value="InsertionSort add" />
+    <option name="LAST_COMMIT_MESSAGE" value="InsertionSort add" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

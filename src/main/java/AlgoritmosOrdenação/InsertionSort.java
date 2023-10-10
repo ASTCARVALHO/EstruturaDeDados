@@ -3,7 +3,7 @@ package AlgoritmosOrdenação;
 public class InsertionSort {
         public static void insertionSort(int[] lista){
             int size = lista.length;
-            for (int i = 0; i < size; i++) {
+            for (int i = 1; i < size; i++) {
                 int pivot = lista[i];
 
                 int j = i-1;
