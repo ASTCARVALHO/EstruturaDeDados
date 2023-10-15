@@ -22,7 +22,7 @@ class BubbleSortTest {
 
         BubbleSort.bubbleSort(numeros);
 
-        System.out.println("Ordenado");
+        System.out.println("Ordenado :");
         System.out.println(Arrays.toString(numeros));
     }
 }

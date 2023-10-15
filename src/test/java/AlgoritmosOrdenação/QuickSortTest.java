@@ -5,10 +5,11 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 import java.util.Random;
 
-class InsertionSortTest {
-    int[] numeros;
+import static org.junit.jupiter.api.Assertions.*;
 
-    InsertionSortTest(){
+class QuickSortTest {
+    int[] numeros;
+    QuickSortTest(){
         numeros = new int[10];
     }
 
@@ -21,9 +22,10 @@ class InsertionSortTest {
         System.out.println("Desordenado: ");
         System.out.println(Arrays.toString(numeros));
 
-        InsertionSort.insertionSort(numeros);
+        QuickSort.quickSort(numeros, 0 , numeros.length -1);
 
-        System.out.println("Ordenado: ");
+        System.out.println("Ordenado");
         System.out.println(Arrays.toString(numeros));
     }
+
 }
