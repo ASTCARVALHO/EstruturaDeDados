@@ -1,55 +1,55 @@
 package AlgoritmosOrdenação;
 
+
 public class MergeSort {
 
-    public static int[] merge(int[] vetA, int[] vetB){
-        int[] vetR = new int[10];
-
-        int i,j,k;
-
-        i = 0;
-        j = 0;
-        k = 0;
-
-        while((i < vetA.length) && (j <  vetB.length)){
-            if(vetA[i] < vetB[j]){
-                vetR[k] = vetA[i];
-                k++;
-                i++;
-            } else {
-                vetR[k] = vetB[j];
-                k++;
-                i++;
-            }
+    public static void mergeSort(int[] arr) {
+        if (arr == null) {
+            return;
         }
-        if (i == vetA.length){
-            while (j < vetB.length){
-                vetR[k] = vetB[j];
-                k++;
-                j++;
+        if (arr.length > 1) {
+            int mid = arr.length / 2;
+            int[] left = new int[mid];
+            int[] right = new int[arr.length - mid];
+
+            for (int i = 0; i < mid; i++) {
+                left[i] = arr[i];
             }
-        }
-        if (j == vetB.length){
-            while(i < vetA.length){
-                vetR[k] = vetA[i];
-                k++;
-                i++;
+            for (int i = mid; i < arr.length; i++) {
+                right[i - mid] = arr[i];
             }
+
+            mergeSort(left);
+            mergeSort(right);
+
+            merge(arr, left, right);
         }
-        return vetR;
     }
 
-    public static int[] sort(int[] vet, int inicio, int fim){
-        int[] temp,tempA,tempB;
-        if(inicio == fim){
-            temp = new int[10];
-            temp[0] = vet[inicio];
+    public static void merge(int[] arr, int[] left, int[] right) {
+        int i = 0, j = 0, k = 0;
+
+        while (i < left.length && j < right.length) {
+            if (left[i] < right[j]) {
+                arr[k] = left[i];
+                i++;
+            } else {
+                arr[k] = right[j];
+                j++;
+            }
+            k++;
         }
-        int meio = (inicio + fim) / 2;
 
-        tempA = sort(vet, inicio, meio);
-        tempB = sort(vet, meio+1, fim);
+        while (i < left.length) {
+            arr[k] = left[i];
+            i++;
+            k++;
+        }
 
-        return merge(tempA,tempB);
+        while (j < right.length) {
+            arr[k] = right[j];
+            j++;
+            k++;
+        }
     }
 }
