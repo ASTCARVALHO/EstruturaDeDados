@@ -1,6 +1,4 @@
-package AlgoritmosOrdenação;
-
-import java.util.ArrayList;
+package AlgoritmosOrdenacao;
 
 public class SelectionSort {
     public static void selectionSort(int[] lista){

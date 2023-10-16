@@ -1,4 +1,4 @@
-package AlgoritmosOrdenação;
+package AlgoritmosOrdenacao;
 
 import org.junit.jupiter.api.Test;
 

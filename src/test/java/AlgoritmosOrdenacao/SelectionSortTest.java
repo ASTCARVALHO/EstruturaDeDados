@@ -1,18 +1,18 @@
-package AlgoritmosOrdenação;
+package AlgoritmosOrdenacao;
 
 import org.junit.jupiter.api.Test;
+
 import java.util.Arrays;
 import java.util.Random;
-import static org.junit.jupiter.api.Assertions.*;
 
-class BubbleSortTest {
-    int[] numeros;
-
-    BubbleSortTest() {
+class SelectionSortTest {
+    int [] numeros;
+    SelectionSortTest(){
         numeros = new int[10];
     }
+
     @Test
-    void testaOrdenacao(){
+    void testeOrdenacao(){
         Random random = new Random();
         for (int i = 0; i < numeros.length; i++) {
             numeros[i] = random.nextInt(100);
@@ -20,9 +20,10 @@ class BubbleSortTest {
         System.out.println("Desordenado: ");
         System.out.println(Arrays.toString(numeros));
 
-        BubbleSort.bubbleSort(numeros);
+        SelectionSort.selectionSort(numeros);
 
-        System.out.println("Ordenado :");
+        System.out.println("Ordenado");
         System.out.println(Arrays.toString(numeros));
     }
+
 }

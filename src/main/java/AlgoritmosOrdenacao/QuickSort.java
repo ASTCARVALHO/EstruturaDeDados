@@ -1,4 +1,4 @@
-package AlgoritmosOrdenação;
+package AlgoritmosOrdenacao;
 
 public class QuickSort {
     public static void quickSort(int[] vet, int inicio, int fim) {

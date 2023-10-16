@@ -1,4 +1,4 @@
-package AlgoritmosOrdenação;
+package AlgoritmosOrdenacao;
 
 public class BubbleSort {
     public static void bubbleSort(int[] lista){
