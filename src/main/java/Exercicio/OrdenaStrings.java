@@ -9,7 +9,7 @@ public class OrdenaStrings {
         int qntPalavras = Integer.parseInt(JOptionPane.showInputDialog("Quantas palavras deseja ordenar?"));
         ArrayList<String> palavras = new ArrayList<>();
         for (int i = 0; i < qntPalavras; i++) {
-            String palavra = JOptionPane.showInputDialog("Digite a" + i +"a" + " palavra");
+            String palavra = JOptionPane.showInputDialog("Digite a " + (i+1) +"ª" + " palavra");
             palavras.add(palavra);
         }
         insertionSortArrayList(palavras);
