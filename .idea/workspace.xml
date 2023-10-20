@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc15ee9-caab-4acc-9ee3-3fa57a6f523e" name="Changes" comment="MergeSort added and tested" />
+    <list default="true" id="dbc15ee9-caab-4acc-9ee3-3fa57a6f523e" name="Changes" comment="ASCII resolved">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Exercicio/OrdenaStrings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -68,13 +71,13 @@
       <recent name="Pilha" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MergeSortTest.testeOrdenacao">
-    <configuration name="TesteOrdenacao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AlgoritmosOrdenação.TesteOrdenacao" />
+  <component name="RunManager" selected="Application.OrdenaStrings">
+    <configuration name="OrdenaStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exercicio.OrdenaStrings" />
       <module name="EstruturaDeDados" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AlgoritmosOrdenação.*" />
+          <option name="PATTERN" value="Exercicio.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,17 +85,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BubbleSortTest.testaOrdenacao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InsertionSortTest.testeOrdenacao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EstruturaDeDados" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AlgoritmosOrdenação.*" />
+          <option name="PATTERN" value="AlgoritmosOrdenacao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="AlgoritmosOrdenação" />
-      <option name="MAIN_CLASS_NAME" value="AlgoritmosOrdenação.BubbleSortTest" />
-      <option name="METHOD_NAME" value="testaOrdenacao" />
+      <option name="PACKAGE_NAME" value="AlgoritmosOrdenacao" />
+      <option name="MAIN_CLASS_NAME" value="AlgoritmosOrdenacao.InsertionSortTest" />
+      <option name="METHOD_NAME" value="testeOrdenacao" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,12 +105,12 @@
       <module name="EstruturaDeDados" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AlgoritmosOrdenação.*" />
+          <option name="PATTERN" value="AlgoritmosOrdenacao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="AlgoritmosOrdenação" />
-      <option name="MAIN_CLASS_NAME" value="AlgoritmosOrdenação.MergeSortTest" />
+      <option name="MAIN_CLASS_NAME" value="AlgoritmosOrdenacao.MergeSortTest" />
       <option name="METHOD_NAME" value="testeOrdenacao" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -118,12 +121,12 @@
       <module name="EstruturaDeDados" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AlgoritmosOrdenação.*" />
+          <option name="PATTERN" value="AlgoritmosOrdenacao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="AlgoritmosOrdenação" />
-      <option name="MAIN_CLASS_NAME" value="AlgoritmosOrdenação.QuickSortTest" />
+      <option name="MAIN_CLASS_NAME" value="AlgoritmosOrdenacao.QuickSortTest" />
       <option name="METHOD_NAME" value="testeOrdenacao" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -134,12 +137,12 @@
       <module name="EstruturaDeDados" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AlgoritmosOrdenação.*" />
+          <option name="PATTERN" value="AlgoritmosOrdenacao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="AlgoritmosOrdenação" />
-      <option name="MAIN_CLASS_NAME" value="AlgoritmosOrdenação.SelectionSortTest" />
+      <option name="MAIN_CLASS_NAME" value="AlgoritmosOrdenacao.SelectionSortTest" />
       <option name="METHOD_NAME" value="testeOrdenacao" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -148,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OrdenaStrings" />
+        <item itemvalue="JUnit.InsertionSortTest.testeOrdenacao" />
         <item itemvalue="JUnit.MergeSortTest.testeOrdenacao" />
         <item itemvalue="JUnit.QuickSortTest.testeOrdenacao" />
         <item itemvalue="JUnit.SelectionSortTest.testeOrdenacao" />
-        <item itemvalue="JUnit.BubbleSortTest.testaOrdenacao" />
-        <item itemvalue="Application.TesteOrdenacao" />
       </list>
     </recent_temporary>
   </component>
@@ -326,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697480197404</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="ASCII resolved">
+      <created>1697485538861</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1697485538861</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -356,7 +366,8 @@
     <MESSAGE value="QuickSortTest and SelectionSortTest added" />
     <MESSAGE value="MergeSort added" />
     <MESSAGE value="MergeSort added and tested" />
-    <option name="LAST_COMMIT_MESSAGE" value="MergeSort added and tested" />
+    <MESSAGE value="ASCII resolved" />
+    <option name="LAST_COMMIT_MESSAGE" value="ASCII resolved" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
