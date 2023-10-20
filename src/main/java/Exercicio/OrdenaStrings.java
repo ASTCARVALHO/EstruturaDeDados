@@ -3,37 +3,35 @@ package Exercicio;
 import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.StringTokenizer;
 
 public class OrdenaStrings {
     public static void main(String[] args) {
-        int qntPalavras = Integer.parseInt(JOptionPane.showInputDialog("Quantas palavras deseja ordenar?"));
-        ArrayList<String> palavras = new ArrayList<>();
-        for (int i = 0; i < qntPalavras; i++) {
-            String palavra = JOptionPane.showInputDialog("Digite a " + (i+1) +"ª" + " palavra");
-            palavras.add(palavra);
-        }
-        insertionSortArrayList(palavras);
-        System.out.println(imprimir(palavras));
+        String textoTemp = JOptionPane.showInputDialog("Digite a frase");
+        String[] texto = textoTemp.split(" ");
+        insertionSortArrayList(texto);
+        System.out.println(imprimir(texto));
     }
-    public static void insertionSortArrayList(ArrayList<String> lista) {
-        int size = lista.size();
+    public static void insertionSortArrayList(String[] texto) {
+        int size = texto.length;
         for (int i = 1; i < size; i++) {
-            String pivot = lista.get(i);
+            String pivot = texto[i];
             int j = i - 1;
 
-            while (j >= 0 && pivot.length() > lista.get(j).length()) {
-                lista.set(j + 1, lista.get(j));
+            while (j >= 0 && pivot.length() > texto[j].length()) {
+                texto[j+1] = texto[j];
                 j--;
             }
 
-            lista.set(j + 1, pivot);
+
+            texto[j+1] = pivot;
         }
     }
 
-    public static String imprimir(ArrayList<String> palavras){
+    public static String imprimir(String[] texto){
         String frase = "";
-        for (String p: palavras) {
-             frase += p + " ";
+        for (String t: texto) {
+             frase += t + " ";
         }
         return frase;
     }
