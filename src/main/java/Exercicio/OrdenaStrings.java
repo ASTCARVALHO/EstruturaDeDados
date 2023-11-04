@@ -22,8 +22,6 @@ public class OrdenaStrings {
                 texto[j+1] = texto[j];
                 j--;
             }
-
-
             texto[j+1] = pivot;
         }
     }
