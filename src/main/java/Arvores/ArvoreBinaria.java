@@ -1,5 +1,7 @@
 package Arvores;
 
+import javax.swing.*;
+
 public class ArvoreBinaria <E extends Comparable>  {
         private Node<E> raiz;
 
@@ -61,6 +63,71 @@ public class ArvoreBinaria <E extends Comparable>  {
             emOrdem(atual.getDireita());
             System.out.println(atual.getDado());
         }
+    }
+
+    public boolean removerNo(E dado){
+        Node<E> atual = this.raiz;
+        Node<E> paiAtual = null;
+        while (atual != null){
+            if(atual.getDado().equals(dado)){
+              break;
+            } else if (atual.getDado().compareTo(dado) == -1) {
+                paiAtual = atual;
+                atual = atual.getEsquerda();
+            }else {
+                paiAtual = atual;
+                atual = atual.getDireita();
+            }
+        }
+        if (atual != null){
+            // caso: = filho só a direita
+            if (atual.getDireita() != null){
+                Node<E> substituto = atual.getDireita();
+                Node<E> paiSubstituto = atual;
+                while (substituto.getEsquerda() != null){
+                    paiSubstituto = substituto;
+                   substituto = substituto.getEsquerda();
+                }
+                if (paiAtual != null) {
+
+                    if (atual.getDado().compareTo(paiAtual.getDado()) == -1) {
+                        paiAtual.setEsquerda(substituto);
+                    } else {
+                        paiAtual.setDireita(substituto);
+                    }
+                }else {
+                    this.raiz = substituto;
+                }
+
+            } else if (atual.getEsquerda() != null) {   // caso: filho só a esquerda
+                Node<E> substituto = atual.getEsquerda();
+                Node<E> paiSubstituto = atual;
+                while (substituto.getDireita() != null){
+                    paiSubstituto = substituto;
+                    substituto = substituto.getDireita();
+                }
+                if (paiAtual != null) {
+                    if (atual.getDado().compareTo(paiAtual.getDado()) == -1) {
+                        paiAtual.setEsquerda(substituto);
+                    } else {
+                        paiAtual.setDireita(substituto);
+                    }
+                }else {
+                    this.raiz = substituto;
+                }
+            }else {  // caso: não tem filho
+                if (paiAtual != null) {
+                    if (atual.getDado().compareTo(paiAtual.getDado()) == -1) {
+                        paiAtual.setEsquerda(null);
+                    } else {
+                        paiAtual.setDireita(null);
+                    }
+                }else {
+                    this.raiz = null;
+                }
+            }
+        }
+        return(atual != null);
     }
 
     }
