@@ -32,5 +32,36 @@ public class ArvoreBinaria <E extends Comparable>  {
                  }
              }
         }
+
+    public Node<E> getRaiz() {
+        return raiz;
+    }
+
+    public void setRaiz(Node<E> raiz) {
+        this.raiz = raiz;
+    }
+
+    public void emOrdem(Node<E> atual) {
+        if (atual != null) {
+            emOrdem(atual.getEsquerda());
+            System.out.println(atual.getDado());
+            emOrdem(atual.getDireita());
+        }
+    }
+    public void preOrdem(Node<E> atual) {
+        if (atual != null) {
+            System.out.println(atual.getDado());
+            emOrdem(atual.getEsquerda());
+            emOrdem(atual.getDireita());
+        }
+    }
+    public void posOrdem(Node<E> atual) {
+        if (atual != null) {
+            emOrdem(atual.getEsquerda());
+            emOrdem(atual.getDireita());
+            System.out.println(atual.getDado());
+        }
+    }
+
     }
 

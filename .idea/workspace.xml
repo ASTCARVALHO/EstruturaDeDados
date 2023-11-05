@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc15ee9-caab-4acc-9ee3-3fa57a6f523e" name="Changes" comment="Execício para ordenar conjunto de strings do maior para o menor usando insertion sort, agora feito de melhor forma">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Arvores/ArvoreBinaria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Arvores/Node.java" afterDir="false" />
+    <list default="true" id="dbc15ee9-caab-4acc-9ee3-3fa57a6f523e" name="Changes" comment="implementando ArvoreBinaria">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Arvores/ArvoreBinariaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exercicio/OrdenaStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Exercicio/OrdenaStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Arvores/ArvoreBinaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Arvores/ArvoreBinaria.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -55,20 +53,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/astca/EstruturaDeDados",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/astca/EstruturaDeDados&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Arvores" />
@@ -77,12 +75,13 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="Arvores" />
       <recent name="AlgoritmosOrdenação" />
       <recent name="Lista" />
       <recent name="Pilha" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OrdenaStrings">
+  <component name="RunManager" selected="JUnit.ArvoreBinariaTest.adicionarEImprimir">
     <configuration name="OrdenaStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Exercicio.OrdenaStrings" />
       <module name="EstruturaDeDados" />
@@ -96,17 +95,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertionSortTest.testeOrdenacao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArvoreBinariaTest.adicionarEImprimir" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EstruturaDeDados" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AlgoritmosOrdenacao.*" />
+          <option name="PATTERN" value="Arvores.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="AlgoritmosOrdenacao" />
-      <option name="MAIN_CLASS_NAME" value="AlgoritmosOrdenacao.InsertionSortTest" />
-      <option name="METHOD_NAME" value="testeOrdenacao" />
+      <option name="PACKAGE_NAME" value="Arvores" />
+      <option name="MAIN_CLASS_NAME" value="Arvores.ArvoreBinariaTest" />
+      <option name="METHOD_NAME" value="adicionarEImprimir" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -162,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ArvoreBinariaTest.adicionarEImprimir" />
         <item itemvalue="Application.OrdenaStrings" />
         <item itemvalue="JUnit.SelectionSortTest.testeOrdenacao" />
         <item itemvalue="JUnit.QuickSortTest.testeOrdenacao" />
         <item itemvalue="JUnit.MergeSortTest.testeOrdenacao" />
-        <item itemvalue="JUnit.InsertionSortTest.testeOrdenacao" />
       </list>
     </recent_temporary>
   </component>
@@ -368,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697828669376</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="implementando ArvoreBinaria">
+      <created>1699139410104</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1699139410104</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -401,7 +407,8 @@
     <MESSAGE value="ASCII resolved" />
     <MESSAGE value="Execício para ordenar conjunto de strings do maior para o menor usando insertion sort" />
     <MESSAGE value="Execício para ordenar conjunto de strings do maior para o menor usando insertion sort, agora feito de melhor forma" />
-    <option name="LAST_COMMIT_MESSAGE" value="Execício para ordenar conjunto de strings do maior para o menor usando insertion sort, agora feito de melhor forma" />
+    <MESSAGE value="implementando ArvoreBinaria" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementando ArvoreBinaria" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
