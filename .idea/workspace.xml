@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc15ee9-caab-4acc-9ee3-3fa57a6f523e" name="Changes" comment="pre-ordem,pos-ordem e em ordem implementados">
+    <list default="true" id="dbc15ee9-caab-4acc-9ee3-3fa57a6f523e" name="Changes" comment="método para remover implementado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Arvores/ArvoreBinaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Arvores/ArvoreBinaria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Arvores/ArvoreBinariaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Arvores/ArvoreBinariaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +81,7 @@
       <recent name="Pilha" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ArvoreBinariaTest.adicionarEImprimir">
+  <component name="RunManager" selected="JUnit.ArvoreBinariaTest.AdicionaERemove">
     <configuration name="OrdenaStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Exercicio.OrdenaStrings" />
       <module name="EstruturaDeDados" />
@@ -90,6 +91,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArvoreBinariaTest.AdicionaERemove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EstruturaDeDados" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Arvores.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Arvores" />
+      <option name="MAIN_CLASS_NAME" value="Arvores.ArvoreBinariaTest" />
+      <option name="METHOD_NAME" value="AdicionaERemove" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -105,22 +122,6 @@
       <option name="PACKAGE_NAME" value="Arvores" />
       <option name="MAIN_CLASS_NAME" value="Arvores.ArvoreBinariaTest" />
       <option name="METHOD_NAME" value="adicionarEImprimir" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MergeSortTest.testeOrdenacao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EstruturaDeDados" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AlgoritmosOrdenacao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AlgoritmosOrdenação" />
-      <option name="MAIN_CLASS_NAME" value="AlgoritmosOrdenacao.MergeSortTest" />
-      <option name="METHOD_NAME" value="testeOrdenacao" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -160,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ArvoreBinariaTest.AdicionaERemove" />
         <item itemvalue="JUnit.ArvoreBinariaTest.adicionarEImprimir" />
         <item itemvalue="Application.OrdenaStrings" />
         <item itemvalue="JUnit.SelectionSortTest.testeOrdenacao" />
         <item itemvalue="JUnit.QuickSortTest.testeOrdenacao" />
-        <item itemvalue="JUnit.MergeSortTest.testeOrdenacao" />
       </list>
     </recent_temporary>
   </component>
@@ -380,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699208962846</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="método para remover implementado">
+      <created>1699211924798</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1699211924798</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -415,7 +423,8 @@
     <MESSAGE value="Execício para ordenar conjunto de strings do maior para o menor usando insertion sort, agora feito de melhor forma" />
     <MESSAGE value="implementando ArvoreBinaria" />
     <MESSAGE value="pre-ordem,pos-ordem e em ordem implementados" />
-    <option name="LAST_COMMIT_MESSAGE" value="pre-ordem,pos-ordem e em ordem implementados" />
+    <MESSAGE value="método para remover implementado" />
+    <option name="LAST_COMMIT_MESSAGE" value="método para remover implementado" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

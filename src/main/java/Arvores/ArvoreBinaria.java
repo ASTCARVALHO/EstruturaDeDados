@@ -71,7 +71,7 @@ public class ArvoreBinaria <E extends Comparable>  {
         while (atual != null){
             if(atual.getDado().equals(dado)){
               break;
-            } else if (atual.getDado().compareTo(dado) == -1) {
+            } else if (dado.compareTo(atual.getDado()) == -1) {
                 paiAtual = atual;
                 atual = atual.getEsquerda();
             }else {
@@ -88,6 +88,7 @@ public class ArvoreBinaria <E extends Comparable>  {
                     paiSubstituto = substituto;
                    substituto = substituto.getEsquerda();
                 }
+                substituto.setEsquerda(atual.getEsquerda());
                 if (paiAtual != null) {
 
                     if (atual.getDado().compareTo(paiAtual.getDado()) == -1) {
